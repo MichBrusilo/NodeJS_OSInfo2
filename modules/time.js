@@ -7,7 +7,7 @@ function timeCounting() {
 	var uptimeHours = Math.floor(uptimeRound/3600);
 	var uptimeMinutes = Math.round((uptimeRound/60)-(uptimeHours*60));
 	var uptimeSeconds = uptimeRound-(uptimeMinutes*60)-(uptimeHours*3600);
-	console.log('Uptime: ', + uptimeHours + " h " + uptimeMinutes + " min " + uptimeSeconds + " sec");
+	return 'Uptime: ', + uptimeHours + " h " + uptimeMinutes + " min " + uptimeSeconds + " sec";
 }
 
 exports.timeCounting = timeCounting;
